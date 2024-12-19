@@ -375,7 +375,7 @@
 	"on-click-right": "~/.config/hypr/scripts/Wlogout.sh",
 },
 "bluetooth": {
-	"format": "",
+	"format": " ",
 	"format-disabled": "󰂳",
 	"format-connected": "󰂱 {num_connections}",
 	"tooltip-format": " {device_alias}",
@@ -537,7 +537,7 @@
 },
 "network": {
 	"format": "{ifname}",
-	"format-wifi": "{icon}",
+	"format-wifi": "{icon} ",
 	"format-ethernet": "󰌘",
 	"format-disconnected": "󰌙",
 	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
