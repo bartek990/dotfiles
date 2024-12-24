@@ -20,8 +20,10 @@ $kotlin\
 $haskell\
 $python\
 [](fg:teal bg:blue)\
+$conda\
+[](fg:blue bg:yellow)\
 $docker_context\
-[](fg:blue bg:purple)\
+[](fg:yellow bg:purple)\
 $time\
 [ ](fg:purple)\
 $line_break$character"""
@@ -169,7 +171,7 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:mantle"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+format = '[[ $symbol( $context) ](fg:peach bg:color_bg3)]($style)'
 
 [time]
 disabled = false
@@ -184,7 +186,12 @@ disabled = false
 disabled = false
 success_symbol = '[🦉](bold fg:green)'
 error_symbol = '[💩](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
+vimcmd_symbol = '[](bold fg:green)'
 vimcmd_replace_one_symbol = '[](bold fg:purple)'
 vimcmd_replace_symbol = '[](bold fg:purple)'
 vimcmd_visual_symbol = '[](bold fg:lavender)'
+
+[conda]
+symbol = " "
+style = "bg:yellow"
+format = '[[$symbol$environment](fg:yellow bg:blue)]($style)'
